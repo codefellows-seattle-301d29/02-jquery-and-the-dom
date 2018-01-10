@@ -3,9 +3,17 @@
 let articles = [];
 
 // COMMENT: What is the purpose of the following function? Why is its name capitalized? Explain the context of "this" within the function. What does "rawDataObj" represent?
-// PUT YOUR RESPONSE HERE
+// The "A" in Article is capital because it is the proper format of a contructor function. This function is being used becuase we are going use jQuery (a library) to display articles into the DOM without writing a lot of code in our HTML file.
 
+//created a constructor function to "push" each method of an artilce into the "Article" function.
 function Article(rawDataObj) {
+  this.title = rawDataObj.title
+  this.category = rawDataObj.category
+  this.author = rawDataObj.author
+  this.authorUrl = rawDataObj.authorUrl
+  this.publishedOn = rawDataObj.publishedOn
+  this.body = rawDataObj.body 
+  article.push(this);
   // TODO: Use the JS object that is passed in to complete this constructor function:
   // Save ALL the properties of `rawDataObj` into `this`
 }
