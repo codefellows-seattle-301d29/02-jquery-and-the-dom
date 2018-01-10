@@ -1,7 +1,7 @@
 'use strict';
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+// The Article object constructor instantiates new objects from the objects within the rawData array. Using key/value pairs, we can use the properties to tie in the values into our articles.
 
 let rawData = [
   {
