@@ -42,4 +42,4 @@ https://developer.mozilla.org/en-US/
 https://oscarotero.com/jquery/
 http://jquery.com/
 
-a special thanks to Isaac Heist for assistance on this Read Me.
+A special thanks to Isaac Heist for assistance on this Read Me.
