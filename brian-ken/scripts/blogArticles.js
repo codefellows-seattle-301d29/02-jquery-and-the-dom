@@ -1,5 +1,8 @@
 'use strict';
 
+
+console.log('ready!');
+
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
 // PUT YOUR RESPONSE HERE
 
@@ -174,3 +177,4 @@ let rawData = [
 
   },
 ];
+
