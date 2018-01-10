@@ -1,27 +1,26 @@
-* {
-    margin: 0;
-    font-family: Helvetica;
-    font-size: 16px;
-    text-decoration: none;
-    list-style: none;
+.heading-group-h1 {
+    background-color: blanchedalmond;
 }
-.heading-group-h1, .main-nav, .icon-menu, .site-header {
-    background-color: #ffe9ad;
+
+body {
+    font-family: sans-serif;
+    color: gray;
 }
-h1 {
-    font-size: 2em;
-    font-weight: bold;
-}
-h2 {
-    font-size: 1.5em;
-    font-weight: bold;
-}
+
 a {
-    color: #444;
+    color: gray;
+    text-decoration: none;
 }
-ul {
-    padding-left: 0px;
+
+h2 {
+    margin-left: 15px;
 }
-.clearfix {
-    clear: both;
+
+h1 {
+    margin-left: 15px;
+}
+
+main {
+    margin-left: 15px;
+
 }
