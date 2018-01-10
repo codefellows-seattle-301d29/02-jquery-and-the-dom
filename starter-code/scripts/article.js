@@ -64,3 +64,27 @@ for(let i = 0; i < rawData.length; i++) {
 for(let i = 0; i < articles.length; i++) {
   $('#articles').append(articles[i].toHtml());
 }
+// Trying to refactor these for loops, thought process below (Ryan & Jasper).
+
+// var myArticleFunction = function(rawData) {
+//   console.log(rawData)
+//   (let i = 0; i < rawData.length; i++) {
+//     articles.push(new Article(rawData[i]));
+
+// var articleToDom = function(let i = 0; i < articles.length; i++) {
+//   $('#articles').append(articles[i].toHtml());
+// }
+// }
+
+// articles.forEach(myArticleFunction);
+
+rawData.forEach(function(item){
+  articles.push(new Article(item))})
+};
+
+articles.forEach(function)(item){
+  $('#articles').append(articles[i].toHtml());
+}
+
+
+
