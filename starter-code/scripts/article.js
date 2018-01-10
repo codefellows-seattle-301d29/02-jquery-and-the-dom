@@ -25,7 +25,7 @@ Article.prototype.toHtml = function() {
 
   let $newArticle = $('article.template').clone();
 
-  $('article').removeClass('template');  
+  $newArticle.removeClass('template');  
 /* Using jQuery attribute, trying to hide class name 'template' from the element 'article' (Ryan & Jasper)*/
 
   /* TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
