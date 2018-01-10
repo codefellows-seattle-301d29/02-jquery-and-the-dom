@@ -30,13 +30,12 @@ Article.prototype.toHtml = function() {
   // adding a class is a good way to change the style on an element.  If the object does not have a published on date this will add one.
 
   if (!this.publishedOn) $newArticle.addClass('draft');
-  $newArticle.attr('data-category', this.category);
   
+  
+  $newArticle.attr('data-category', this.category);
   $newArticle.find('address').html('<a href="' + this.authorUrl + '">' + this.author + '</a>');
-
   $newArticle.find('h1').html(this.title);
   $newArticle.find('.article-body').html('<p>' + this.body + '</p>');
-  // $newArticle.find('time').html(this.publishedOn);
 
 
   /* DONE: Now use jQuery traversal and setter methods to fill in the rest of the current template clone with values of the properties of this particular Article instance.
@@ -62,19 +61,12 @@ rawData.sort(function(a,b) {
 
 // TODO: Refactor these for loops using the .forEach() array method.
 // this instantiates each dataset into an object and adds it to the array at the top of this file.
-// for(let i = 0; i < rawData.length; i++) {
-//   articles.push(new Article(rawData[i]));
-// }
 
 rawData.forEach(function(rawData) {
   articles.push(new Article(rawData));
 })
 
-for(let i = 0; i < articles.length; i++) {
-  $('#articles').append(articles[i].toHtml());
-}
-
-// articles.forEach(function(item){
-//   $('#articles').append(item.toHtml());
-// })
+articles.forEach(function(item){
+  $('#articles').append(item.toHtml());
+})
 // this for loop adds each article from the array to the html.
