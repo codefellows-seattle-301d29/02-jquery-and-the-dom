@@ -48,17 +48,17 @@ Article.prototype.toHtml = function() {
   return $newArticle;
 };
 
-// rawData.sort(function(a,b) {
-//   // REVIEW: Take a look at this sort method; This may be the first time we've seen it. Look at the docs and think about how the dates would be sorted if the callback were not included in this method.
-//   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
-// });
+rawData.sort(function(a,b) {
+  // REVIEW: Take a look at this sort method; This may be the first time we've seen it. Look at the docs and think about how the dates would be sorted if the callback were not included in this method.
+  return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
+});
 
 // TODO: Refactor these for loops using the .forEach() array method.
+rawData.forEach(function(rawDataStuff) {
+  articles.push(new Article(rawDataStuff));
+});
 
-// for(let i = 0; i < rawData.length; i++) {
-//   articles.push(new Article(rawData[i]));
-// }
 
-for(let i = 0; i < articles.length; i++) {
-  $('#articles').append(articles[i].toHtml());
-}
+articles.forEach(function(moreArticleStuff) {
+  $('#articles').append(moreArticleStuff.toHtml());
+});
