@@ -1,0 +1,40 @@
+ul {
+    display: none;
+}
+
+
+
+@media only screen and (min-width: 640px) {
+
+    
+    
+  
+    .icon-menu {
+      display: none;
+    }
+  
+    ul {
+      display: block;
+      margin-bottom: 30px;
+    }
+
+    li {
+        display: inline;
+        
+        padding-left: 30px;
+        border-bottom: none;
+
+        
+    }
+  }
+
+  .icon-menu:hover~ul {
+      display: block;
+  }
+
+  .template {
+      display: none;
+  }
+  
+
+  
