@@ -1,6 +1,9 @@
+
 # Jquery and DOM
 
 **Author**: Andrii Glukhyi and Gene Peterson
+=======
+
 **Version**: 1.0.0 (increment the patch/fix version number up if you make more commits past your first submission)
 
 ## Overview
@@ -28,6 +31,3 @@ Application has a constructor function to instantiate new objects. Function to '
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with GET and POST routes for the book resource.
 
-## Credits and Collaborations
-<!-- Give credit (and a link) to other people or resources that helped you build this application. -->
--->
