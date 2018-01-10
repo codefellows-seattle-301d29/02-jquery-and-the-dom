@@ -1,0 +1,56 @@
+.heading-group-h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.icon-menu {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    float: right;
+    font-size: 46px;
+    
+}    
+
+img {
+    float: right;
+}
+    
+    
+
+
+body {
+    font-family: arial;
+}
+
+.byline {
+    
+    color: gray;
+}
+
+.byline a {
+    text-decoration: none;
+    color: gray;
+    font-weight: bold;
+    font-style: italic;
+    
+
+}
+
+li {
+    
+    color: gray; 
+    font-size: 28px;
+    list-style: none;
+    padding-bottom: 20px;
+    border-bottom: 1px solid gray;
+    padding-top: 5px;
+    
+    
+}
+
+li a {
+    text-decoration: none;
+    color: gray;
+}
