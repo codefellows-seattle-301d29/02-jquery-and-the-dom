@@ -1,7 +1,8 @@
 'use strict';
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+
+/* Considering key/value pairs of "rawData" we used this structure to construct our constructor function which is then rendered to an array, and allows us to see the articles displayed on the DOM without having to write repetative code. (Ryan & Jasper) */
 
 let rawData = [
   {
