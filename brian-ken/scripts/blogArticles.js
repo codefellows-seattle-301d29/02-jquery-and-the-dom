@@ -1,10 +1,7 @@
 'use strict';
 
-
-console.log('ready!');
-
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+// This variable is an array of objects with each object consiting of key value pairs. These key value pairs enable us to target specific values of the object, and display them correctly. 
 
 let rawData = [
   {
