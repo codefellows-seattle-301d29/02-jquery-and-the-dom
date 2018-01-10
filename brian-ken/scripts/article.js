@@ -8,11 +8,16 @@ let articles = [];
 function Article(rawDataObj) {
   // DONE: Use the JS object that is passed in to complete this constructor function:
   // Save ALL the properties of `rawDataObj` into `this`
-  this.rawDataObj=rawDataObj;
+  // this.rawDataObj=rawDataObj;
+  this.title=rawDataObj.title;
+  this.category=rawDataObj.category;
+  this.author=rawDataObj.author;
+  this.authorUrl=rawDataObj.authorUrl;
+  this.publishedOn=rawDataObj.publishedOn;
+  this.body=rawDataObj.body;
 }
 
 Article.prototype.toHtml = function() {
-  console.log('18', this.rawDataObj.author);
   // COMMENT: What is the benefit of cloning the article? (see the jQuery docs)
   // Allows programmers to move elements without removing or deleting the first instance of the element. Also, you can modify cloned elements before resubmitting them into the document.
 
@@ -32,13 +37,13 @@ Article.prototype.toHtml = function() {
       4. article body, and
       5. publication date. */
 
-  $newArticle.find('h1').html(this.rawDataObj.title);
-  $newArticle.find('a').html(this.rawDataObj.author);
-  $newArticle.find('.article-body').html(this.rawDataObj.body);
-  $newArticle.find('a').attr('href', this.rawDataObj.authorUrl);
+  $newArticle.find('h1').html(this.title);
+  $newArticle.find('a').html(this.author);
+  $newArticle.find('.article-body').html(this.body);
+  $newArticle.find('a').attr('href', this.authorUrl);
 
   // REVIEW: Display the date as a relative number of 'days ago'
-  $newArticle.find('time').html('About ' + parseInt((new Date() - new Date(this.rawDataObj.publishedOn))/60/60/24/1000) + ' days ago.');
+  $newArticle.find('time').html('About ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago.');
   $newArticle.append('<hr>');
   return $newArticle[0].innerHTML;
 };
