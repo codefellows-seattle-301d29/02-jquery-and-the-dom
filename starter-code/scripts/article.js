@@ -23,12 +23,10 @@ Article.prototype.toHtml = function() {
 
   let $newArticle = $('article.template').clone();
   /* DONE: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
-  $('article.template').removeClass('template');
-  // $($newArticle).replace('Author Name', Article.author);
 
-
+  $newArticle.removeClass('template');
+  
   // adding a class is a good way to change the style on an element.  If the object does not have a published on date this will add one.
-
   if (!this.publishedOn) $newArticle.addClass('draft');
   
   
