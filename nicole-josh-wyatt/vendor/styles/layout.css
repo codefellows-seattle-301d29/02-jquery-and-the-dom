@@ -1,0 +1,21 @@
+body {
+    font-family: Arial;
+  }
+  
+  .site-header {
+    padding: 10px 5px 10px 10px;
+    background-color: rgb(223, 205, 146);
+  }
+  
+  .site-header h1 {
+    margin-bottom: 20px;
+  }
+  
+  main {
+    margin: 0 10px;
+  }
+  
+  main section {
+    margin-top: 20px;
+  }
+  

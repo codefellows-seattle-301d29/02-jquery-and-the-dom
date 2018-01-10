@@ -1,3 +1,69 @@
 .template {
     display: none;
 }
+
+.icon-menu {
+    display: block;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    font-size: 3em;
+    font-weight: bolder;
+
+}
+
+nav > ul { display: none; }
+
+nav > ul > li {
+  font-family: times;
+  color: #888;
+  font-size: 2em;
+  width: 100%;
+  border-bottom: 1px solid gray;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px 0px;
+}
+
+
+
+.icon-menu ~ ul { display: block; }
+
+
+
+@media only screen and (min-width: 640px) {
+    .icon-menu {
+        display: none;
+    }
+
+    body {
+        margin: 0 70px;
+    }
+
+    nav > ul { 
+        display: block; 
+        width: 100%;
+        margin-left: 25px;
+    }
+
+    .pull-right {
+        float: right;
+    }
+    main {
+        clear: both;
+    }
+
+    .site-header {
+        height: 260px;
+    }
+
+    nav > ul > li {
+        display: inline-block;
+        width: 130px;
+        float: left;
+        border: none;
+        margin-right: 15px;
+        
+        
+    }
+}
