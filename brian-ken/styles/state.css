@@ -1,0 +1,20 @@
+/* NAV */
+@media only screen and (min-width: 640px) {
+    .main-nav ul li{
+        border-bottom: none;
+        display: inline-block;
+        font-size: 20px;
+        padding: 0 10px;
+    }
+    .main-nav ul {
+        margin-left: 30px;
+    }
+    img {
+        max-width: 100%;
+        display: inline-block;
+        margin: 0;
+    }
+}
+.main-nav:hover  ul{
+    display: block;
+}
