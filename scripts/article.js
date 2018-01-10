@@ -24,11 +24,12 @@ Article.prototype.toHtml = function() {
   // .clone() is a convenient way to duplicate elements on a page
 
 
-  let $newArticle = $('article.template').clone();
+  let $newArticle = $('article.template').clone().removeClass('template');
   /* TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
 
+
   if (!this.publishedOn) $newArticle.addClass('draft');
-  $newArticle.attr('data-category', this.category);
+  $newArticle.attr('data-category',this.category);
 
   /* TODO: Now use jQuery traversal and setter methods to fill in the rest of the current template clone with values of the properties of this particular Article instance.
     We need to fill in:
@@ -38,10 +39,15 @@ Article.prototype.toHtml = function() {
       4. article body, and
       5. publication date. */
 
-  $newArticle.find('address').html('<a href="' + this.authorUrl + '">' + this.author+ '</a>');
 
-  $newArticle.find('h1').html(this.titl);
+
+  $newArticle.find('address').html('<a href=' + this.authorUrl + '>' + this.aut + '</a>');
+
+  $newArticle.find('h1').html(this.title);
+  // $('.templete').find('h1').html(this.title);
+
   $newArticle.find('.article-body').html(this.bod);
+  // $('.templete')
 
   // REVIEW: Display the date as a relative number of 'days ago'
   $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.publishedOn))/60/60/24/1000) + ' days ago');
@@ -54,13 +60,10 @@ rawData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-// TODO: Refactor these for loops using the .forEach() array method.
+rawData.forEach(function(item){
+  articles.push(new Article(item) )});
+// // console.log(rawData);
 
-// for(let i = 0; i < rawData.length; i++) {
-//   articles.push(new Article(rawData[i]));
-// }
-rawData.forEach(articles.push(new Article(rawDataObj)));
-
-for(let i = 0; i < articles.length; i++) {
-  $('#articles').append(articles[i].toHtml());
-}
+articles.forEach(function(item){
+  $('#articles').append(item.toHtml())
+});
