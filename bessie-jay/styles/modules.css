@@ -8,7 +8,7 @@
 
 }
 
-.hamburger-menu-img {
+.icon-menu {
     height: 40px;
     width: 40px;
     display:block;
@@ -17,7 +17,7 @@
     right: 10px;
 }
 
-.ul-class {
+.main-nav ul {
     display:none;
     width:90%;
     /* position: absolute;
@@ -28,13 +28,12 @@
     color: rgb(79, 79, 79);
 }
 
-.hamburger-menu-img:hover + .ul-class{
+.icon-menu:hover ~ .main-nav ul{
     display:block;
-
 }
 
 @media only screen and (min-width: 640px) {
-    .hamburger-menu-img {
+    .icon-menu {
         display:none;
     }
 
@@ -43,8 +42,8 @@
         margin-left: 5%;
     }
 
-    .ul-class {
-        display:block;
+    .main-nav ul {
+        display: block;
     }
 
 }

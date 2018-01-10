@@ -11,18 +11,19 @@ function Article(rawDataObj) {
   this.title = rawDataObj.title;
   this.category = rawDataObj.category;
   this.author = rawDataObj.author;
-  this.authorURL = rawDataObj.authorURL;
+  this.authorUrl = rawDataObj.authorUrl;
   this.publishedOn = rawDataObj.publishedOn;
   this.body = rawDataObj.body;
-
 }
 
 Article.prototype.toHtml = function() {
   // COMMENT: What is the benefit of cloning the article? (see the jQuery docs)
   // It is a convenient way to duplicate elements on a page because it copies matching elements as well as all of their descendant elements and text nodes.
 
-  let $newArticle = $('article.template').clone().removeClass('template');
+  let $newArticle = $('article.template').clone();
   /* TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
+
+  $newArticle.removeClass('template');
 
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
@@ -30,9 +31,8 @@ Article.prototype.toHtml = function() {
   // 1. adds author name
   $newArticle.find('a').html(this.author);
 
-  // 2. adds author url - NEEDS WORK
-  // $newArticle.find('href').text(this.authorURL);
-  // $newArticle.find('a').attr('href', this.authorURL);
+  // 2. adds author url
+  $newArticle.find('.byline a').attr('href', this.authorUrl);
 
   // 3. adds title to article
   $newArticle.find('h1').html(this.title);

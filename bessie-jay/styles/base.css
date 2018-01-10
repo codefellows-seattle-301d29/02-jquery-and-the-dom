@@ -1,30 +1,32 @@
-*{
+/* *{
     margin: 0;
     padding: 0;
-    
     outline: 1px dotted orange;
-}
+} */
 
 body {
     font-family: helvetica;
-
 }
 
 a {
     text-decoration: none; 
     color: inherit;
-  }
+}
 
-  h1 {
-      font-size: 48px;
-  }
+h1 {
+    font-size: 48px;
+}
 
-  h2 {
-      font-size: 30px;
-  }
+h2 {
+    font-size: 30px;
+}
 
 img{
     width:90%;
+}
+
+main img {
+    display:block;
 }
 
 header {
@@ -36,10 +38,4 @@ header {
 
 p {
     margin: 10px 10% 10px 10%;
-}
-
-
-@media only screen and (min-width: 640px) {
-
-
 }
