@@ -1,7 +1,7 @@
 'use strict';
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
-// PUT YOUR RESPONSE HERE
+// rawData is anarray of objects that key/value pairs that will be grabbed by the constructor to make each object.
 
 let rawData = [
   {
