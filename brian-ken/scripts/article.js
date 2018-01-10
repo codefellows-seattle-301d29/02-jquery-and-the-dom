@@ -38,7 +38,7 @@ Article.prototype.toHtml = function() {
   $newArticle.find('a').attr('href', this.rawDataObj.authorUrl);
 
   // REVIEW: Display the date as a relative number of 'days ago'
-  $newArticle.find('time').html('about ' + parseInt((new Date() - new Date(this.rawDataObj.publishedOn))/60/60/24/1000) + ' days ago');
+  $newArticle.find('time').html('About ' + parseInt((new Date() - new Date(this.rawDataObj.publishedOn))/60/60/24/1000) + ' days ago.');
   $newArticle.append('<hr>');
   return $newArticle[0].innerHTML;
 };
