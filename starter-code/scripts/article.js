@@ -64,4 +64,8 @@ rawData.forEach(function(item) {
 for(let i = 0; i < articles.length; i++) {
   $('#articles').append(articles[i].toHtml());
 }
+
+// articles.forEach(function(item){
+//   $('#articles').append(item.toHtml());
+// })
 // this for loop adds each article from the array to the html.
