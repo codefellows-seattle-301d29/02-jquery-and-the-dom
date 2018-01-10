@@ -22,15 +22,24 @@ Article.prototype.toHtml = function() {
   // it is a deep copy taking all children, ids, classes and text nodes.
 
   let $newArticle = $('article.template').clone();
-  /* TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
+  /* DONE: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
   $('article.template').removeClass('template');
+  // $($newArticle).replace('Author Name', Article.author);
+
 
   // adding a class is a good way to change the style on an element.  If the object does not have a published on date this will add one.
 
   if (!this.publishedOn) $newArticle.addClass('draft');
   $newArticle.attr('data-category', this.category);
+  
+  $newArticle.find('address').html('<a href="' + this.authorUrl + '">' + this.author + '</a>');
 
-  /* TODO: Now use jQuery traversal and setter methods to fill in the rest of the current template clone with values of the properties of this particular Article instance.
+  $newArticle.find('h1').html(this.title);
+  $newArticle.find('.article-body').html('<p>' + this.body + '</p>');
+  // $newArticle.find('time').html(this.publishedOn);
+
+
+  /* DONE: Now use jQuery traversal and setter methods to fill in the rest of the current template clone with values of the properties of this particular Article instance.
     We need to fill in:
       1. author name,
       2. author url,
@@ -57,8 +66,8 @@ rawData.sort(function(a,b) {
 //   articles.push(new Article(rawData[i]));
 // }
 
-rawData.forEach(function(item) {
-  articles.push(new Article(item));
+rawData.forEach(function(rawData) {
+  articles.push(new Article(rawData));
 })
 
 for(let i = 0; i < articles.length; i++) {
