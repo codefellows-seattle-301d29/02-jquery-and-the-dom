@@ -22,6 +22,7 @@ ul {
         display: inline;
         
         padding-left: 30px;
+        border-bottom: none;
 
         
     }
@@ -31,6 +32,9 @@ ul {
       display: block;
   }
 
+  .template {
+      display: none;
+  }
   
 
   
