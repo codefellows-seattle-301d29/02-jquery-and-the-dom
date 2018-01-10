@@ -24,7 +24,7 @@ Article.prototype.toHtml = function() {
   // .clone() is a convenient way to duplicate elements on a page
 
 
-  let $newArticle = $('article.template').clone().removeClass();
+  let $newArticle = $('article.template').clone();
   /* TODO: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
 
   if (!this.publishedOn) $newArticle.addClass('draft');
@@ -56,10 +56,10 @@ rawData.sort(function(a,b) {
 
 // TODO: Refactor these for loops using the .forEach() array method.
 
-for(let i = 0; i < rawData.length; i++) {
-  articles.push(new Article(rawData[i]));
-}
-// rawData.forEach(articles.push(new Article(item)))
+// for(let i = 0; i < rawData.length; i++) {
+//   articles.push(new Article(rawData[i]));
+// }
+rawData.forEach(articles.push(new Article(rawDataObj)));
 
 for(let i = 0; i < articles.length; i++) {
   $('#articles').append(articles[i].toHtml());

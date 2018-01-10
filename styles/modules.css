@@ -7,6 +7,9 @@ nav ul {
 .heading-group-h1 {
     background-color: bisque;
 }
+.template {
+    display: none;
+}
 
 
 
@@ -21,4 +24,5 @@ nav ul {
 li {
     display: inline-block;
 }
+
 }
