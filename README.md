@@ -22,18 +22,18 @@ _Your repository must include:_
 ├── README.md
 ├── index.html
 ├── scripts
-│   ├── article.js
-│   └── blogArticles.js
+│   ├── article.js
+│   └── blogArticles.js
 ├── styles
-│   ├── base.css
-│   ├── fonts
-│   │   ├── icomoon.eot
-│   │   ├── icomoon.svg
-│   │   ├── icomoon.ttf
-│   │   └── icomoon.woff
-│   ├── icons.css
-│   ├── layout.css
-│   └── modules.css
+│   ├── base.css
+│   ├── fonts
+│   │   ├── icomoon.eot
+│   │   ├── icomoon.svg
+│   │   ├── icomoon.ttf
+│   │   └── icomoon.woff
+│   ├── icons.css
+│   ├── layout.css
+│   └── modules.css
 └── vendor
     └── styles
         └── normalize.css
