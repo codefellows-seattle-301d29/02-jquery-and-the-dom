@@ -1,0 +1,14 @@
+* {
+    font-family: sans-serif;
+    }
+    main {
+        padding: 10px;
+    }
+    p, h1, h2 {
+        line-height: 1.4;
+    }
+    img {
+        max-width: 100%;
+        display: block;
+        margin: 10px 0;
+    }
