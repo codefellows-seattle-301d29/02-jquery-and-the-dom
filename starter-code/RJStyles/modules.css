@@ -1,0 +1,15 @@
+.main-nav {
+    display: block;
+  }
+  
+  @media only screen and (min-width: 640px) {
+  
+.main-nav {
+    display: none;
+    }
+  }
+
+  .template {
+      display: none;
+  }
+
