@@ -2,6 +2,8 @@
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
 // PUT YOUR RESPONSE HERE
+// This data is an array of objects containing key value pairs which hold information about the articles we need to populate the page. Our article.js uses this information to construct objects that we can reference so we can use jQuery methods to add these articles to the DOM.
+
 
 let rawData = [
   {
