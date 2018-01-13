@@ -1,97 +1,39 @@
-body {
-    max-width: 500px;
-    min-width: 350px;
-    margin: 0 auto;
-}
-img {
-   max-width: 100%;
-}
-.site-header {
-    width: 100%;
-    /* height: 120px; */
-}
- .heading-group-h1 {
-    display: block;
+.pull-left {
     float: left;
-    padding: 0.5% 0 2.5% 1.5%;
-    width: 80%;
-}
-.icon-menu {
-    display: block;
+  }
+  
+  .pull-right {
     float: right;
-    font-size: 3em;
-    width: 18.5%;
-    text-align: right;
-    padding-bottom: 98px;
-}
-.main-nav {
-    display: none;
-    padding-bottom: 15px;
-}
-li {
-    padding: 10px 10px 10px 5px;
-    border-bottom: solid #777 1px;
-}
-a {
-    font-size: 1.5em;
-    margin-left: 0px;
-}
-.icon-menu:hover + .main-nav {
-    display: block;
-    position: relative;
-    float: left;
-    clear: left;
-    width: 100%;
-}
-main {
-    padding: 5px 15px 15px 15px;
-    line-height: 1.5em;
+  }
+  
+  .clearfix::after {
+    content: "";
+    display: table;
     clear: both;
-}
-.byline, main a {
-    display: inline;
-    font-size: 1em;
-    color: #555;
-}
-.byline address {
-    display: inline;
-    font-weight: bold;
-}
-.article-body {
-    margin-top: 15px;
-}
-.article-body p {
-    float: left;
-}
-@media only screen and (min-width: 500px) {
-    body {
-        max-width: 1000px;
+  }
+  
+  .heading-group-h1 {
+    max-width: 80%;
+  }
+  
+  #filters select {
+    width: 90%;
+    margin: .2em 5%;
+  }
+  
+  @media only screen and (min-width: 640px) {
+    .heading-group-h1 {
+      padding: .1em .1em .1em 2em;
+      float: none;
     }
-    .icon-menu {
-        display: none;
+  
+    #filters select {
+      width: 15em;
+      margin: .2em .2em;
     }
-    .main-nav {
-        display: block;
-        padding: 20px;
+  
+    #filters li {
+      width: 20em;
+      display: inline;
     }
-    li {
-        display: inline;
-        padding: 0;
-        border-bottom: none;
-}
-    }
-    header a {
-        margin-left: 10px;
-    }
-    main {
-        padding-top: 35px;
-    }
-    main a {
-        margin-left: 0px;
-        /* font-size: 1em; */
-    }
-    .pull-right {
-        max-width: 100%;
-        float: right;
-    }
-}
+  }
