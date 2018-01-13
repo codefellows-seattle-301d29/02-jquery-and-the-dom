@@ -19,8 +19,10 @@ This application is a single page blog. This model can be used many times over a
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
-jQuery library to manipulate the 
-Application has a constructor function to instantiate new objects. Function to 'html' to rewrite our cloned article. We rendered a function to render items to the page.
+jQuery library to manipulate the  
+Application has a constructor function to instantiate new objects. 
+Function to 'html' to rewrite our cloned article. 
+Rendered a function to render items to the page.
 
 ## Change Log
 <!-- Use this are to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an examples:
