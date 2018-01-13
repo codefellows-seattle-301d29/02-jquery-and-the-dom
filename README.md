@@ -14,7 +14,11 @@ This application is a single page blog. This model can be used many times over a
 ## Getting Starteds 
 <!-- What are the steps that a user must take in order to build this app on their own machine and get it running? -->
 
-1. Create a constructor function, 2. Clone the article element from the DOM, 3. Use information from article to fill our cloned article, 4. Create 'for loop' to instantiate the articles to the empty array, 5. Use 'for loop' to render articles to page.
+1. Create a constructor function.
+2. Clone the article element from the DOM.
+3. Use information from article to fill our cloned article. 
+4. Create 'for loop' to instantiate the articles to the empty array. 
+5. Use 'for loop' to render articles to page.
 
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
