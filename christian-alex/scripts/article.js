@@ -25,10 +25,11 @@ Article.prototype.toHtml = function() {
   /* DONE: This cloned article still has a class of template. In our modules.css stylesheet, we should give all elements with a class of template a display of none so that our template does not display in the browser. But, we also need to make sure we're not accidentally hiding our cloned article. */
 
   $newArticle.removeClass('template');
-
+  
   // adding a class is a good way to change the style on an element.  If the object does not have a published on date this will add one.
   if (!this.publishedOn) $newArticle.addClass('draft');
-
+  
+  
   $newArticle.attr('data-category', this.category);
   $newArticle.find('address').html('<a href="' + this.authorUrl + '">' + this.author + '</a>');
   $newArticle.find('h1').html(this.title);
@@ -56,7 +57,7 @@ rawData.sort(function(a,b) {
   return (new Date(b.publishedOn)) - (new Date(a.publishedOn));
 });
 
-// DONE: Refactor these for loops using the .forEach() array method.
+// TODO: Refactor these for loops using the .forEach() array method.
 // this instantiates each dataset into an object and adds it to the array at the top of this file.
 
 rawData.forEach(function(rawData) {
