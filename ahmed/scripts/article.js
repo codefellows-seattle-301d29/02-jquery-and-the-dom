@@ -15,14 +15,6 @@ function Article(rawDataObj) {
   this.category = rawDataObj.category;
   this.body = rawDataObj.body;
   this.publishedOn = rawDataObj.publishedOn;
-
-  this.title = rawDataObj.title;
-  this.category = rawDataObj.category;
-  this.author = rawDataObj.author;
-  this.authorUrl = rawDataObj.authorUrl;
-  this.publishedOn = rawDataObj.publishedOn;
-  this.body = rawDataObj.body;
-
 }
 
 Article.prototype.toHtml = function() {
