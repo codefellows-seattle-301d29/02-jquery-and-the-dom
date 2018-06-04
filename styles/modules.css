@@ -1,0 +1,24 @@
+
+@media only screen and (min-width:640px) {
+    
+    .icon-menu {
+        display: none;
+        font-size: 200%;
+    }
+
+    nav {
+        display: block;
+    }
+}
+
+@media only screen and (max-width:640px) {
+    .icon-menu {
+        display: block;
+        float: right;
+        margin-right: 10px;
+    }
+
+    nav {
+        display: none;
+    }
+}
