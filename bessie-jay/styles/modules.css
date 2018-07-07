@@ -1,0 +1,53 @@
+.main-nav{
+    margin-top: 10px;
+    margin-left:10%;
+    margin-bottom:20px;
+}
+
+.icon-home:before {
+
+}
+
+.icon-menu {
+    height: 40px;
+    width: 40px;
+    display:block;
+    position:absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.main-nav ul {
+    display:none;
+    width:90%;
+    /* position: absolute;
+    top:10px; */
+    background-color:  rgba(255, 225, 0, 0.851);
+    font-size: 30px;
+    
+    color: rgb(79, 79, 79);
+}
+
+.icon-menu:hover ~ .main-nav ul{
+    display:block;
+}
+
+@media only screen and (min-width: 640px) {
+    .icon-menu {
+        display:none;
+    }
+
+    li {
+        float: left;
+        margin-left: 5%;
+    }
+
+    .main-nav ul {
+        display: block;
+    }
+
+}
+
+.template {
+    display: none;
+}
