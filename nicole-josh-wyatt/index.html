@@ -5,10 +5,10 @@
   <title>Lab 2</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="vendor/styles/normalize.css">
-  <link rel="stylesheet" href="styles/base.css">
+  <link rel="stylesheet" href="vendor/styles/base.css">
   <link rel="stylesheet" href="vendor/styles/icons.css">
-  <link rel="stylesheet" href="styles/layout.css">
-  <link rel="stylesheet" href="styles/modules.css">
+  <link rel="stylesheet" href="vendor/styles/layout.css">
+  <link rel="stylesheet" href="vendor/styles/modules.css">
   <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
 </head>
 <body>
@@ -39,6 +39,7 @@
             published <time datetime="2000-01-01">Publish Time</time>
             <!-- COMMENT: What is the <time> HTML element used for? How does this connect to our JS files?  -->
             <!-- PUT YOUR RESPONSE HERE -->
+            <!-- The <time> HTML element gives the computer the date and time in a format it can read, we use this to say what day the article was published. -->
           </div>
         </header>
         <section class="article-body"></section>
@@ -49,6 +50,8 @@
     &copy; 2017 Code Fellows | Static Blog | Happy Ipsum!
   </footer>
 <!-- // TODO: Include any/all needed script tags -->
-
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="scripts/article.js"></script>
+<script src="scripts/blogArticles.js"></script>
 </body>
 </html>
