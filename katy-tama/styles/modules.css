@@ -1,0 +1,25 @@
+/* .template {
+    display: none;
+} */
+
+img {
+    max-width: 100%;
+}
+nav {
+    display: none;
+}
+
+@media only screen and (min-width: 500px) {
+    img {
+        border: solid 2px green;
+        border-radius: 50%;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block;
+    }
+}

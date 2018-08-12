@@ -2,6 +2,8 @@
 
 // COMMENT: How is this data utilized within our blog app? What is the structure of this data (your response should include the terms "object", "array", and "key/value pairs")?
 // PUT YOUR RESPONSE HERE
+// This data is utilized within our blog as a blog post.  The data is array of objects with properties on those objects in the form of key/value pairs (eg title: 'Bacon Ipsum').//
+
 
 let rawData = [
   {
